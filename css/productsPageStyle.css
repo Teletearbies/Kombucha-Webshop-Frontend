@@ -183,7 +183,7 @@ i {
 /* HEADER */
 .header {
     padding: 0 3rem;
-    height: 100vh;
+    height: 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -476,7 +476,7 @@ h4 {
     font-weight: 400;
 }
 
-    /* CARD STYLE */
+/* CARD STYLE */
 
 .container {
     float: left;
@@ -524,8 +524,8 @@ h4 {
 }.
 
  container .card:nth-child(4) .icon {
-    background: #7d6afc;
-}
+     background: #7d6afc;
+ }
 
 
 .container .card .icon .fa {
@@ -640,7 +640,20 @@ h4 {
     margin: 0 auto;
 }
 
-.productsbox{
-    height: 70rem;
-    width: 70rem;
+.products{
+    height: 40rem;
+    width: 50rem;
+}
+
+.products_box {
+    overflow-y: scroll;
+    padding-right: 1rem;
+    scroll-behavior: smooth;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+
+    width: 100%;
+    margin-top: 5rem;
 }
