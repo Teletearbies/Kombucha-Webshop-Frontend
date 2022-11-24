@@ -45,7 +45,7 @@ body {
 .sectionProducts {
     padding: 18rem 3rem;
     /*border-top: 1px solid #022539;*/
-    background: linear-gradient(75deg, #5d5a2c, #0f3b56);
+    background: linear-gradient(125deg,  #022539, #0f3b56, #5d5a2c);
 
     transition: transform 1s, opacity 1s;
     overflow-y: scroll;
