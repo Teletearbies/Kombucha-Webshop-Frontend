@@ -409,7 +409,7 @@ h4 {
 /* FOOTER */
 .footer {
     padding: 3rem 3rem;
-    background-color: rgb(110, 88, 48);
+    background-color: rgb(183, 143, 70);
     display: flex;
 
 }
@@ -437,7 +437,7 @@ h4 {
 
 .footer__link {
     font-size: 2.6rem;
-    color: #ea9999;
+    color: #fac3c3;
     text-decoration: none;
     text-align: center;
     padding-bottom: 20px;
@@ -453,7 +453,7 @@ h4 {
 
 .footer__copyright {
     font-size: 1.4rem;
-    color: #aaa;
+    color: #eae3e3;
     text-align: center;
     padding-top: 20px;
 }
