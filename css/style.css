@@ -45,7 +45,7 @@ body {
 .sectionProducts {
     padding: 20rem 3rem;
     /*border-top: 1px solid #022539;*/
-    background: linear-gradient(125deg,  #022539, #0f3b56, #5d5a2c);
+    background: linear-gradient(  #022539, #0f3b56,  #46b7a1);
 
     transition: transform 1s, opacity 1s;
     overflow-y: scroll;
@@ -54,7 +54,7 @@ body {
 .sectionAbout {
     padding: 22rem 3rem;
     /*border-top: 1px solid #022539;*/
-    background: linear-gradient(45deg, #46b7a1, #6e5f98);
+    background: linear-gradient( #46b7a1, #6e5f98);
 
     transition: transform 1s, opacity 1s;
     overflow-y: scroll;
@@ -63,7 +63,7 @@ body {
 .sectionLocations {
     padding: 22rem 3rem;
     /*border-top: 1px solid #022539;*/
-    background: linear-gradient(45deg, #b78f46, #6e5f98);
+    background: linear-gradient(#6e5f98, #6e5f98, #b78f46);
 
     transition: transform 1s, opacity 1s;
     overflow-y: scroll;
@@ -130,6 +130,7 @@ body {
     cursor: pointer;
     transition: all 0.3s;
     align-content: center;
+    margin-left: 35rem;
 }
 
 .btnL {
@@ -145,6 +146,7 @@ body {
     cursor: pointer;
     transition: all 0.3s;
     align-content: center;
+    margin-left: 35rem;
 }
 
 .btn:hover {
@@ -672,7 +674,6 @@ h4 {
 .container .card .face.face2 .content h3 {
     margin: 0 0 10px 0;
     padding: 0;
-    color: #fff;
     font-size: 24px;
     text-align: center;
     color: #fce4c6;
@@ -682,3 +683,13 @@ h4 {
     text-decoration: none;
     color: #414141;
 }
+
+/* TAKE TO TOP BUTTON*/
+
+
+
+
+
+
+
+
