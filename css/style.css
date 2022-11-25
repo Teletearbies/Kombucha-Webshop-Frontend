@@ -130,6 +130,7 @@ body {
     cursor: pointer;
     transition: all 0.3s;
     align-content: center;
+    margin-left: 35rem;
 }
 
 .btnL {
@@ -145,6 +146,7 @@ body {
     cursor: pointer;
     transition: all 0.3s;
     align-content: center;
+    margin-left: 35rem;
 }
 
 .btn:hover {
