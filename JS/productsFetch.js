@@ -1,6 +1,6 @@
 import { getAll  } from "./Service/API_calls.js";
 
-const activitiesCont = document.querySelector('#products')
+const products = document.querySelector('#products')
 
 getAll("products").then(r => {
     console.log(r)
@@ -10,8 +10,13 @@ getAll("products").then(r => {
         let div = document.createElement("div")
         div.className = "products"
         div.innerText = item.name
-        div.style.backgroundImage = "linear-gradient(45deg, rgba(44, 174, 186, 0.1), rgba(44, 174, 186, 0.9)), url(../img/products/" + item.name + ".png"+")"
+        a.style.textDecorationLine = "none";
+        div.style.color = "#fc9721";
+        div.style.textAlign = "CENTER";
+        div.style.fontSize = "26px";
+        div.style.backgroundImage = "linear-gradient(45deg, rgba(44, 174, 186, 0.1), rgba(44, 174, 186, 0.1)), url(../img/products/icon/" + item.id + ".png"+")"
+        console.log(div.style.backgroundImage)
         a.appendChild(div)
-        activitiesCont.appendChild(a)
+        products.appendChild(a)
     })
 })
