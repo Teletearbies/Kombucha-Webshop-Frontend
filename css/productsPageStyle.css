@@ -31,6 +31,7 @@ body {
     color: #444;
     line-height: 1.9;
     background-color: #022539;
+
 }
 
 /* GENERAL ELEMENTS */
@@ -623,14 +624,8 @@ h4 {
     color: #414141;
 }
 
-.whitebox{
-    background-color: ghostwhite;
-    border-radius: 2rem;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.product_container{
+
     width: 60vw;
 
     height: 35vw;
@@ -638,22 +633,27 @@ h4 {
     min-width: 50rem;
     padding: 3rem;
     margin: 0 auto;
+    font-weight: bold;
+
+    display: grid;
+    justify-content: center;
+
 }
 
-.products{
-    height: 40rem;
-    width: 50rem;
+.products {
+    height: 50rem;
+    width: 30rem;
+    transition: transform .6s;
+}
+
+.products:hover {
+    transform: scale(1.11);
 }
 
 .products_box {
-    overflow-y: scroll;
-    padding-right: 1rem;
-    scroll-behavior: smooth;
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: 4rem;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: space-evenly;
-
-    width: 100%;
-    margin-top: 5rem;
+    justify-content: center;
 }
+
