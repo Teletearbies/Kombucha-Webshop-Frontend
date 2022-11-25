@@ -646,6 +646,7 @@ h4 {
 }
 
 .products_box {
+    background-color: #9be15d;
     overflow-y: scroll;
     padding-right: 1rem;
     scroll-behavior: smooth;
