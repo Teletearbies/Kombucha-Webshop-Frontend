@@ -1,4 +1,4 @@
-import { getAll  } from "./Service/API_calls.js";
+import { getAll  } from "./service/API_calls.js";
 
 const products = document.querySelector('#products')
 
