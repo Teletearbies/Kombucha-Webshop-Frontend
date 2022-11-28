@@ -339,9 +339,13 @@ h4 {
 
 /* FOOTER */
 .footer {
+
     padding: 3rem 3rem;
     background-color: rgba(17, 55, 77, 0.53);
     display: flex;
+    position: fixed;
+    bottom: 1px;
+    width: 100%;
 
 }
 
