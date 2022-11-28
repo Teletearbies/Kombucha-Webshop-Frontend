@@ -10,6 +10,8 @@
           rel="stylesheet"
   />
   <link rel="stylesheet" href="css/style.css" />
+  <script src="JS/takeToTopButton.js" type="module" defer ></script>
+
   <title>Kalles Kombucha</title>
 </head>
 <body>
@@ -22,6 +24,7 @@
             id="logo"
             data-version-number = "3.0"
     /></a>
+
     <ul class="nav__links">
       <li class="nav__item">
         <a class="nav__link" href="#section--1">Products</a>
@@ -33,7 +36,7 @@
         <a class="nav__link" href="#section--3">About</a>
       </li>
       <li class="nav__item">
-        <a class="nav__link" href="#section--4">Blog</a>
+        <a class="nav__link" href="HTML/blog.html">Blog</a>
       </li>
       <li class="nav__item">
         <button class="btn btn-default" onclick="window.location='HTML/login.html'" type="button"
@@ -54,7 +57,13 @@
             alt="Kalle Logo"
     />
   </div>
+
+
 </header>
+
+
+
+
 
 <section class="sectionProducts" id="section--1">
   <div class="section__title">
@@ -203,7 +212,7 @@
       Click here to read more about what Kombucha is, and about Kalles vision for
       the future of kombucha.
     </h3>
-   <button class="btnK"> Tell me of this magical stuff
+   <button  class="btnK" onclick="window.location='HTML/about.html'" type="button" > Tell me of this magical stuff
    </button>
   </div>
 </section>
@@ -215,10 +224,10 @@
       Want to pop down to your local kiosk for a Kalle Kombucha?
     </h3>
 
-    <button class="btnL">Locations around the globe</button>
+    <button class="btnL" onclick="window.location='HTML/locations.html'" type="button" >Locations around the globe</button>
   </div>
-</section>
 
+</section>
 <footer>
 <section class="footer" id="section--4">
   <div class="section__title">
@@ -243,23 +252,7 @@
 </section>
 </footer>
 
-<div class="modal hidden">
-  <button class="btn--close-modal">&times;</button>
-  <h2 class="modal__header">
-    Open your bank account <br />
-    in just <span class="highlight">5 minutes</span>
-  </h2>
-  <form class="modal__form">
-    <label>First Name</label>
-    <input type="text" />
-    <label>Last Name</label>
-    <input type="text" />
-    <label>Email Address</label>
-    <input type="email" />
-    <button class="btn">Next step &rarr;</button>
-  </form>
-</div>
-<div class="overlay hidden"></div>
+
 
 <script src="https://kit.fontawesome.com/4a85efafbc.js" crossorigin="anonymous"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
