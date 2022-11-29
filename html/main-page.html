@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!--<link rel="shortcut icon" type="image/png" href="img/icon.png" />-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 
   <link
@@ -13,15 +12,16 @@
 
   <script src="js/frontPageProductsFetch.js" type="module" defer ></script>
 
-  <title>Kalles Kombucha</title>
+  <title>Kalle's Kombucha</title>
+
 </head>
 <body>
 
-
 <header class="header">
-  <nav class="nav"><a href="index.html">
+  <nav class="nav">
+    <a onclick="window.location='main-page.html'" type="button">
     <img
-            src="img/logos/Logo_small.bmp"
+            src="../img/logos/Logo_small.bmp"
             alt="Bankist logo"
             class="nav__logo"
             id="logo"
@@ -42,10 +42,10 @@
         <a class="nav__link" href="html/blog.html">Blog</a>
       </li>
       <li class="nav__item">
-        <button class="btn btn-default"
+        <button class="btn btn-default" onclick="window.location='login.html'" type="button"
         >  <i class="fa-solid fa-cart-shopping"></i>
         </button>
-        <button class="btn btn-default"
+        <button class="btn btn-default" onclick="window.location='login.html'" type="button"
         > <i class="fa-solid fa-user"></i>
         </button>
       </li>
@@ -55,7 +55,7 @@
   <div>
 
     <img
-            src="img/logos/Logo_big.bmp"
+            src="../img/logos/Logo_big.bmp"
             class="Kalle Logo"
             alt="Kalle Logo"
     />
@@ -63,6 +63,8 @@
 
 
 </header>
+
+
 
 
 
@@ -226,7 +228,7 @@
       Click here to read more about what Kombucha is, and about Kalles vision for
       the future of kombucha.
     </h3>
-   <button class="btnK" onclick="window.location='html/about.html'" type="button" > Tell me of this magical stuff
+   <button class="btnK" onclick="window.location='about.html'" type="button" > Tell me of this magical stuff
    </button>
   </div>
 </section>
@@ -238,13 +240,10 @@
       Want to pop down to your local kiosk for a Kalle Kombucha?
     </h3>
 
-    <button class="btnL" onclick="window.location='html/locations.html'" type="button" >Locations around the globe</button>
+    <button class="btnL" onclick="window.location='locations.html'" type="button" >Locations around the globe</button>
   </div>
 
 </section>
-
-
-
 <footer>
 <section class="footer" id="section--4">
   <div class="section__title">
@@ -272,8 +271,7 @@
 
 <script src="js/frontPageProductsFetch.js" type="module" defer></script>
 <script src="https://kit.fontawesome.com/4a85efafbc.js" crossorigin="anonymous"></script>
-
-
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 </body>
 </html>
