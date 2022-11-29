@@ -1,4 +1,4 @@
-import { getById  } from "./Service/API_calls.js";
+import { getById  } from "./service/API_calls.js";
 
 const productName = document.getElementById("productName");
 const productDescription = document.getElementById("productDescription");
