@@ -45,7 +45,7 @@ body {
 .sectionProducts {
     padding: 20rem 3rem;
     /*border-top: 1px solid #022539;*/
-    background: linear-gradient(125deg,  #022539, #0f3b56, #5d5a2c);
+    background: linear-gradient(  #022539, #0f3b56,  #46b7a1);
 
     transition: transform 1s, opacity 1s;
     overflow-y: scroll;
@@ -54,7 +54,7 @@ body {
 .sectionAbout {
     padding: 22rem 3rem;
     /*border-top: 1px solid #022539;*/
-    background: linear-gradient(45deg, #46b7a1, #6e5f98);
+    background: linear-gradient( #46b7a1, #6e5f98);
 
     transition: transform 1s, opacity 1s;
     overflow-y: scroll;
@@ -63,7 +63,7 @@ body {
 .sectionLocations {
     padding: 22rem 3rem;
     /*border-top: 1px solid #022539;*/
-    background: linear-gradient(45deg, #b78f46, #6e5f98);
+    background: linear-gradient(#6e5f98, #6e5f98, #b78f46);
 
     transition: transform 1s, opacity 1s;
     overflow-y: scroll;
@@ -253,7 +253,14 @@ i {
 /* HEADER */
 .header {
     padding: 0 3rem;
-    height: 100vh;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-login {
+    padding: 0 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -409,7 +416,7 @@ h4 {
 /* FOOTER */
 .footer {
     padding: 3rem 3rem;
-    background-color: rgb(110, 88, 48);
+    background-color: rgb(183, 143, 70);
     display: flex;
 
 }
@@ -437,7 +444,7 @@ h4 {
 
 .footer__link {
     font-size: 2.6rem;
-    color: #ea9999;
+    color: #fac3c3;
     text-decoration: none;
     text-align: center;
     padding-bottom: 20px;
@@ -453,7 +460,7 @@ h4 {
 
 .footer__copyright {
     font-size: 1.4rem;
-    color: #aaa;
+    color: #eae3e3;
     text-align: center;
     padding-top: 20px;
 }
@@ -674,7 +681,6 @@ h4 {
 .container .card .face.face2 .content h3 {
     margin: 0 0 10px 0;
     padding: 0;
-    color: #fff;
     font-size: 24px;
     text-align: center;
     color: #fce4c6;
@@ -684,7 +690,3 @@ h4 {
     text-decoration: none;
     color: #414141;
 }
-
-
-
-
