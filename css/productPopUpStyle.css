@@ -1,0 +1,20 @@
+
+
+
+
+.popupbox{
+    background-color: lightblue;
+    border-radius: 2rem;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+
+    height: 35vw;
+    min-height: 30rem;
+    min-width: 55rem;
+    padding: 3rem;
+    margin: 0 auto;
+}
