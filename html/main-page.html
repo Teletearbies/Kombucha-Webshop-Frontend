@@ -10,6 +10,8 @@
   />
   <link rel="stylesheet" href="../css/style.css" />
 
+  <script src="../js/frontPageProductsFetch.js" type="module" defer ></script>
+
   <title>Kalle's Kombucha</title>
 
 </head>
@@ -37,7 +39,7 @@
         <a class="nav__link" href="#section--3">About</a>
       </li>
       <li class="nav__item">
-        <a class="nav__link" href="blog.html">Blog</a>
+        <a class="nav__link" href="../html/blog.html">Blog</a>
       </li>
       <li class="nav__item">
         <button class="btn btn-default" onclick="window.location='login.html'" type="button"
@@ -63,10 +65,20 @@
 </header>
 
 
-
-
-
 <section class="sectionProducts" id="section--1">
+  <div class="section__title">
+    <h2 class="section__description">Products</h2>
+      <div class="product_container">
+
+        <div class="products_box" id="products" >
+
+        </div>
+      </div>
+  </div>
+</section>
+
+
+<!--<section class="sectionProducts" id="section&#45;&#45;1">
   <div class="section__title">
     <h2 class="section__description">Products</h2>
 
@@ -74,9 +86,9 @@
       <div class="card">
         <div class="face face1">
           <div class="content">
-            <div><a href="products.html">
+            <div><a href="HTML/products.html">
               <img
-                      src="../img/products/Strawberry.png"
+                      src="img/products/Strawberry.png"
                       alt="strawberry"
                       class="card__img"
                       id="strawberry"
@@ -99,9 +111,9 @@
       <div class="card">
         <div class="face face1">
           <div class="content">
-            <div><a href="products.html">
+            <div><a href="HTML/products.html">
               <img
-                      src="../img/products/Grapes.png"
+                      src="img/products/Grapes.png"
                       alt="grape"
                       class="card__img"
                       id="grape"
@@ -126,9 +138,9 @@
       <div class="card">
         <div class="face face1">
           <div class="content">
-            <div><a href="products.html">
+            <div><a href="HTML/products.html">
               <img
-                      src="../img/products/Cherry.png"
+                      src="img/products/Cherry.png"
                       alt="cherry"
                       class="card__img"
                       id="cherry"
@@ -151,9 +163,9 @@
       <div class="card">
         <div class="face face1">
           <div class="content">
-            <div><a href="products.html">
+            <div><a href="HTML/products.html">
               <img
-                      src="../img/products/Asparagus.png"
+                      src="img/products/Asparagus.png"
                       alt="asparagus"
                       class="card__img"
                       id="asparagus"
@@ -176,9 +188,9 @@
       <div class="card">
         <div class="face face1">
           <div class="content">
-            <div><a href="products.html">
+            <div><a href="HTML/products.html">
               <img
-                      src="../img/products/Raspberry.png"
+                      src="img/products/Raspberry.png"
                       alt="rasberry"
                       class="card__img"
                       id="rasberry"
@@ -202,7 +214,7 @@
     </div>
 
   </div>
-</section>
+</section>-->
 
 
 <section class="sectionAbout" id="section--3">
@@ -253,6 +265,8 @@
 </section>
 </footer>
 
+
+<script src="js/frontPageProductsFetch.js" type="module" defer></script>
 <script src="https://kit.fontawesome.com/4a85efafbc.js" crossorigin="anonymous"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
