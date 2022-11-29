@@ -2,30 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script
-            src="https://code.jquery.com/jquery-3.6.1.js"
-            integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
-            crossorigin="anonymous">
-
-    </script>
-    <!--<link rel="shortcut icon" type="image/png" href="img/icon.png" />-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 
     <link
             href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
             rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/productsPageStyle.css"/>
-    <link rel="stylesheet" href="../css/productPopUpStyle.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/products.css"/>
 
-    <title>Kalles Kombucha</title>
+
+    <title>Kalle's Kombucha</title>
 
     <script src="../js/productsFetch.js" type="module" defer></script>
-    <script src="../js/productPopUpClick.js" defer></script>
 </head>
 
-<header class="header">
-    <nav class="nav"><a href="../index.html">
+<header class="product-header">
+    <nav class="nav">
+        <a onclick="window.location='main-page.html'" type="button">
         <img
                 src="../img/logos/Logo_small.bmp"
                 alt="Bankist logo"
@@ -44,14 +38,14 @@
                 <a class="nav__link" href="about.html">About</a>
             </li>
             <li class="nav__item">
-                <a class="nav__link" href="#blog.html">Blog</a>
+                <a class="nav__link" href="blog.html">Blog</a>
             </li>
             <li class="nav__item">
-                <button class="btn btn-default"
-                ><i class="fa-solid fa-cart-shopping"></i>
+                <button class="btn btn-default" onclick="window.location='login.html'" type="button"
+                > <i class="fa-solid fa-cart-shopping"></i>
                 </button>
-                <button class="btn btn-default"
-                ><i class="fa-solid fa-user"></i>
+                <button class="btn btn-default" onclick="window.location='login.html'" type="button"
+                > <i class="fa-solid fa-user"></i>
                 </button>
 
 
@@ -70,11 +64,10 @@
 
         </div>
     </div>
+
 </section>
 
-<!-- OVERLAYS WHEN PRODUCTS ARE LOADED FROM DATABASE -->
-<!--<footer>
-    <section class="footer" id="section&#45;&#45;4">
+    <section class="footer-product" >
         <div class="section__title">
             <h3 class="footer__link">
                 Find us @
@@ -95,8 +88,6 @@
             <p class="footer__copyright">© 2022 Kalle's Kombucha</p>
         </div>
     </section>
-</footer>-->
-
 
 <script src="https://kit.fontawesome.com/4a85efafbc.js" crossorigin="anonymous"></script>
 

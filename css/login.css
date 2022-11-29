@@ -6,9 +6,8 @@
 
 .container-login{
     margin: 0;
-    top: 50px;
     left: 50%;
-    position: relative;
+    position: absolute;
     text-align: center;
     transform: translateX(-50%);
     background-color: #022539;
@@ -176,8 +175,8 @@ label span {
 .footer-login {
     position: relative;
     left: 0;
-    bottom: 0;
-    top: 200px;
+    padding: 2px;
+    top: 550px;
     width: 100%;
     color: #78797d;
     font-size: 14px;
