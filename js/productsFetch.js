@@ -1,4 +1,4 @@
-import { getAll  } from "./Service/API_calls.js";
+import { getAll  } from "./service/API_calls.js";
 
 const products = document.querySelector('#products')
 
@@ -6,7 +6,7 @@ getAll("products").then(r => {
     console.log(r)
     r.forEach(item => {
         let a = document.createElement("a")
-        a.href = "HTML/products.html"
+        a.href = "productDescription.html?id=" + item.id
         let div = document.createElement("div")
         div.className = "products"
         div.innerText = item.name
