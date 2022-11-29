@@ -690,3 +690,46 @@ h4 {
     text-decoration: none;
     color: #414141;
 }
+
+/* PRODUCTS SECTION*/
+
+.product_container{
+
+    width: 30vw;
+
+    height: 35vw;
+    min-height: 100rem;
+    min-width: 50rem;
+    padding: 3rem;
+    margin: 0 auto;
+    font-weight: bold;
+
+    display: grid;
+    justify-content: center;
+
+}
+
+.products {
+    height: 20rem;
+    width: 30rem;
+    transition: transform .6s;
+}
+
+.products:hover {
+    transform: scale(1.11);
+}
+
+.products_box {
+    display: grid;
+    grid-gap: 4rem;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
