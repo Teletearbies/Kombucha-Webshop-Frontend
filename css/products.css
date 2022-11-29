@@ -60,3 +60,12 @@
 .footer-login .fa {
     color: #7f5feb;;
 }
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

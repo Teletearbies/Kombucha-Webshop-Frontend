@@ -1,6 +1,5 @@
-const descriptionEditButton = document.getElementById("popup")
+const descriptionEditButton = document.getElementById("openPopUp")
 
 descriptionEditButton.addEventListener('click', () =>{
-    console.log("hello")
-    $('#cont').load("productPopUp.html")
+    $('#cont').load("popUpPage.html")
 })
