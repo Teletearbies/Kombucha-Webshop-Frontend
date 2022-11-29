@@ -6,7 +6,7 @@ getAll("products").then(r => {
     console.log(r)
     r.forEach(item => {
         let a = document.createElement("a")
-        a.href = "HTML/products.html"
+        a.href = "products.html"
         let div = document.createElement("div")
         div.className = "products"
         div.innerText = item.name
