@@ -4,13 +4,22 @@
     width: 50%;
     padding: 20px;
     margin: auto;
-    position: absolute;
+    position: fixed;
     left: 30%;
     top: 25%;
     line-height: 1.5;
     display: block;
     vertical-align: middle;
+    min-height: 100vh;
     z-index: +2;
+
+}
+
+.center-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
 }
 
@@ -24,7 +33,6 @@
     border-radius: 25px;
 }
 
-
 .image_column {
     width: 300px;
     height: 500px;
@@ -34,7 +42,7 @@
 
 .description_column {
     padding: 20px;
-    height: 460px;
+    height: 500px;
     width: 500px;
     background: pink;
     font-weight: bold;

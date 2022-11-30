@@ -40,3 +40,20 @@ export async function update(id,body,resource){
         .catch(err => console.log(err))
 
 }
+
+export async function create(body,resource){
+    return fetch(url + '/'+ resource+'/', {
+        method: "POST",
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(body)
+    })
+        .then(response => {
+            if(response.status===200){
+                return  response.json()
+            }
+            return response.status
+        })
+        .catch(err => console.log(err))
+}

@@ -1,11 +1,10 @@
 const productName = document.getElementById("productName");
 const productDescription = document.getElementById("productDescription");
 const productPrice = document.getElementById("productPrice");
-
+const productId = document.getElementById("chosenProductId");
 
 //Get id from URL sent by products.html
-const param = new URLSearchParams(window.location.search);
-const id = param.get("id");
+const id = productId.value
 const apiUrl = "http://localhost:8080/products/" + id
 
 
