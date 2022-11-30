@@ -1,6 +1,6 @@
 
 .products_popup_bigbox {
-    border-radius: 25px; /* rounds the edges*/
+    border-radius: 25px;
     width: 50%;
     padding: 20px;
     margin: auto;
@@ -11,6 +11,7 @@
     display: block;
     vertical-align: middle;
     z-index: +2;
+
 }
 
 .product_popup_smallbox {
@@ -20,6 +21,7 @@
     display: grid;
     grid-gap: 0;
     grid-template-columns: repeat(2, 1fr);
+    border-radius: 25px;
 }
 
 
@@ -27,6 +29,7 @@
     width: 300px;
     height: 500px;
     background-repeat: no-repeat;
+    border-radius: 25px 0 0 25px;
 }
 
 .description_column {
@@ -37,6 +40,7 @@
     font-weight: bold;
     font-size: medium;
     overflow-y: auto;
+    border-radius:0 25px 25px 0;
 }
 
 .closebtn {

@@ -33,6 +33,7 @@
     height: 50rem;
     width: 30rem;
     transition: transform .6s;
+    border-radius: 25px;
 }
 
 .products:hover {
@@ -44,6 +45,7 @@
     grid-gap: 4rem;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
+
 }
 
 .footer-product {
