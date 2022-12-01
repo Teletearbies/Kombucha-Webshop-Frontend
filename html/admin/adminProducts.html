@@ -7,18 +7,21 @@
             integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
             crossorigin="anonymous"></script>
 
-    <script src="../js/productsFetch.js" type="module" defer></script>
+    <script src="../../js/admin/adminProductFetch.js" type="module" defer></script>
+    <script src="../../js/admin/addProductPopUpClick.js" type="module" defer></script>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     <link
             href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
             rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/style.css"/>
-    <link rel="stylesheet" href="../css/products.css"/>
-    <link rel="stylesheet" href="../css/productPopUpStyle.css"/>
+    <link rel="stylesheet" href="../../css/style.css"/>
+    <link rel="stylesheet" href="../../css/products.css"/>
+    <link rel="stylesheet" href="../../css/productPopUpStyle.css"/>
+
 
     <title>Kalle's Kombucha</title>
+
 
 </head>
 
@@ -26,7 +29,7 @@
     <nav class="nav">
         <a onclick="window.location='main-page.html'" type="button">
             <img
-                    src="../img/logos/Logo_small.bmp"
+                    src="../../img/logos/Logo_small.bmp"
                     alt="Bankist logo"
                     class="nav__logo"
                     id="logo"
@@ -34,16 +37,16 @@
             /></a>
         <ul class="nav__links">
             <li class="nav__item">
-                <a class="nav__link" href="products.html">Products</a>
+                <a class="nav__link" href="productsAdmin.html">Products</a>
             </li>
             <li class="nav__item">
-                <a class="nav__link" href="locations.html">Locations</a>
+                <a class="nav__link" href="../locations.html">Locations</a>
             </li>
             <li class="nav__item">
-                <a class="nav__link" href="about.html">About</a>
+                <a class="nav__link" href="../about.html">About</a>
             </li>
             <li class="nav__item">
-                <a class="nav__link" href="blog.html">Blog</a>
+                <a class="nav__link" href="../blog.html">Blog</a>
             </li>
             <li class="nav__item">
                 <button class="btn btn-default" onclick="window.location='login.html'" type="button"
@@ -52,24 +55,29 @@
                 <button class="btn btn-default" onclick="window.location='login.html'" type="button"
                 ><i class="fa-solid fa-user"></i>
                 </button>
+
+
             </li>
         </ul>
     </nav>
 
 </header>
 
-<body class="productBackground">
-
+<body>
 <input type="hidden" id="chosenProductId" name="chosenProductId" value="">
+
 <section>
-
     <div id="cont"></div>
-
+    </div>
 </section>
 
 <section class="section__description">
     <div class="product_container">
         <div class="products_box" id="products">
+            <div class="products_box">
+
+                <button id="addProductButton">Add new</button>
+            </div>
         </div>
     </div>
 
@@ -97,6 +105,7 @@
     </div>
 </section>
 </footer>-->
+
 
 <script src="https://kit.fontawesome.com/4a85efafbc.js" crossorigin="anonymous"></script>
 

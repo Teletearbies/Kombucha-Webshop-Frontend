@@ -1,6 +1,6 @@
 .productBackground {
-    /*background: linear-gradient(0deg, rgba(252,151,33,1) 0%, rgba(2,37,57,1) 80%, rgba(2,37,57,1) 100%);*/
-    /*background-repeat: unset;*/
+    background: linear-gradient(0deg, rgba(252,151,33,1) 0%, rgba(2,37,57,1) 80%, rgba(2,37,57,1) 100%);
+
 }
 
 .product-header {

@@ -26,7 +26,7 @@ priceTag.addEventListener("change", (event) => {
 
 cancelButton.addEventListener("click", () => {
 
-        window.location.href = "productsAdmin.html";
+        window.location.href = "adminProducts.html";
 
 });
 
@@ -60,10 +60,17 @@ console.log(name,description,price)
 
 
                         alert("Product was successfully added");
-                        window.location.href = "productsAdmin.html";
+                        window.location.href = "adminProducts.html";
                     }
 
                 }
             )
     }
 );
+
+
+const btn = document.getElementById("addProductButton")
+
+btn.addEventListener('click', (e) => {
+    $('#cont').load('./addProduct.html');
+})
