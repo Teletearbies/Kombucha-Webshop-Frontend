@@ -10,6 +10,7 @@
     --color-primary-opacity: #5ec5763a;
     --color-secondary-opacity: #ffcd0331;
     --color-tertiary-opacity: #ff58602d;
+    --header-color: #022539;
     --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
     --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
 }
@@ -696,16 +697,12 @@ h4 {
 /* PRODUCTS SECTION*/
 
 .product_container{
-
     width: 30vw;
-
-    height: 35vw;
     min-height: 100rem;
     min-width: 50rem;
     padding: 3rem;
     margin: 0 auto;
     font-weight: bold;
-
     display: grid;
     justify-content: center;
 
