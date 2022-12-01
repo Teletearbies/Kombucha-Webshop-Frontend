@@ -1,5 +1,4 @@
-
-
+const addProductButton = document.getElementById("addProductButton")
 const saveButton = document.getElementById("saveButton");
 const cancelButton = document.getElementById("cancelButton");
 const url= "http://localhost:8080/products";
@@ -68,9 +67,6 @@ console.log(name,description,price)
     }
 );
 
-
-const btn = document.getElementById("addProductButton")
-
-btn.addEventListener('click', (e) => {
+addProductButton.addEventListener('click', (e) => {
     $('#cont').load('./addProduct.html');
 })

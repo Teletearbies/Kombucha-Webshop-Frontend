@@ -31,6 +31,21 @@
     transform: scale(1.11);
 }
 
+.addProduct {
+    font-weight: bold;
+    color: rgba(252,151,33,1);
+    font-size: 30px;
+    height: 50rem;
+    width: 30rem;
+    transition: transform .6s;
+    border-radius: 25px;
+}
+
+.addProduct:hover {
+    transform: scale(1.11);
+}
+
+
 .footer-product {
     position: relative;
     left: 0;

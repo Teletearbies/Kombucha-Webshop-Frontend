@@ -19,7 +19,7 @@
 
       <div class="closebtn">
         <a href="adminProducts.html">
-          <img src="../../img/logos/close_button.png" style="height: 7%; width: 7%">
+          <img src="../../img/icons/close_button.png" style="height: 7%; width: 7%">
         </a>
       </div>
 
@@ -36,10 +36,15 @@
         <option value="3 case">3 case</option>
         <option value="4 case">4 case</option>
       </select>
-
-      <button class="btnK" id="deleteKombuchaBtn" > <img src="../../img/logos/cancel-icon.png"> Delete </button>
+      <div class="twoButtons">
+      <button class="editButton" id="editProductBtn"> <img src="../../img/icons/edit-icon.png"> Edit </button>
+      <button class="deleteButton" id="deleteProductBtn" > <img src="../../img/icons/cancel-icon.png"> Delete </button>
+         </div>
     </div>
   </div>
 </div>
 
 <script src="../../js/admin/adminProductPopUpFetch.js" type="module" defer></script>
+<script src="../../js/admin/deleteProduct.js" type="module" defer></script>
+<script src="../../js/admin/editProductPopUpClick.js" type="module" defer></script>
+<script src="../../js/admin/deleteProductPopUpClick.js" type="module" defer></script>

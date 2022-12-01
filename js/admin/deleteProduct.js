@@ -1,12 +1,9 @@
-const delButton = document.getElementById("deleteKombuchaBtn")
+const cancelButton = document.getElementById("cancel")
+const confirmButton = document.getElementById("confirm")
 const productId = document.getElementById("chosenProductId")
-
-
-
 
 const url = "http://localhost:8080/products/" + productId.value
 
-console.log(productId.value)
 
 async function deleteProduct()
 {
@@ -25,4 +22,11 @@ async function deleteProduct()
 
 }
 
-delButton.addEventListener('click', deleteProduct)
+function cancel()
+{
+    window.location.replace("adminProducts.html")
+}
+
+confirmButton.addEventListener('click', deleteProduct)
+cancelButton.addEventListener('click', cancel)
+
