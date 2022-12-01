@@ -10,6 +10,7 @@
     --color-primary-opacity: #5ec5763a;
     --color-secondary-opacity: #ffcd0331;
     --color-tertiary-opacity: #ff58602d;
+    --header-color: #022539;
     --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
     --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
 }
@@ -151,7 +152,7 @@ body {
 }
 
 .btn:hover {
-    /*background-color: #FB991C;*/
+    background-color: #FB991C;
 }
 
 .btn--text {
@@ -205,6 +206,8 @@ img {
 .nav__logo {
     height: 4.5rem;
     transition: all 0.3s;
+    cursor: pointer;
+
 }
 
 .nav__links {
