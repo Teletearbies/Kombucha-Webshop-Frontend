@@ -1,16 +1,14 @@
 <link rel="stylesheet" href="../../css/productPopUpStyle.css">
 
 
-<div class="addProducts_popup_bigbox">
+<div class="editProductBox">
 
-    <div class="image_column" id="image_column">
-    </div>
+    <h2>Add New Product</h2>
 
-    <div class="description_column">
 
         <div class="name">
             <h3>Name</h3>
-            <textarea name="name" id ="name" placeholder="Name of Product"></textarea>
+            <input name="name" id="name" placeholder="Name of Product">
 
         </div>
         <div class="description">
@@ -20,24 +18,23 @@
 
         <div class="price">
             <h3>Price</h3>
-            <textarea id="price" name="price" placeholder="Price of product"></textarea>
+            <input id="price" name="price" placeholder="Price of product">
         </div>
-        <div class="twobutton">
+        <div class="twoButtons">
 
-            <button id="saveButton" class="editButton"><img src="../../img/icons/save-icon.png" alt="">Save</button>
-            <button id="cancelButton" class="deleteButton"><img src="../../img/icons/cancel-icon.png" alt="">Cancel
+            <button id="saveButton" class="editButton"><img src="../../img/icons/save-icon.png" alt="Save">Save</button>
+            <button id="cancelButton" class="deleteButton"><img src="../../img/icons/cancel-icon.png" alt="Cancel">Cancel
             </button>
+
         </div>
 
-    </div>
 
+        <!-- <div id="imageUploadCont">
 
-    <!-- <div id="imageUploadCont">
+             <input type="file" id="image_input" accept="image/jpeg, image/png">
+             <div id="display_image"></div>
 
-         <input type="file" id="image_input" accept="image/jpeg, image/png">
-         <div id="display_image"></div>
-
-     </div>-->
+         </div>-->
 
 </div>
 <script rel="stylesheet" src="../../js/admin/addProduct.js" type="module" defer></script>

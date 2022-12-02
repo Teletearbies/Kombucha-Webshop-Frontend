@@ -1,43 +1,38 @@
 <link rel="stylesheet" href="../../css/productPopUpStyle.css">
 
 
-<div class="addProducts_popup_bigbox">
+<div class="editProductBox">
+    <h2>Edit Product</h2>
 
-    <div class="image_column" id="image_column">
-    </div>
-
-    <div class="description_column">
-
-        <div class="name">
-            <h3>Name</h3>
-            <textarea name="name" id ="name" placeholder="Name of Product"></textarea>
-
-        </div>
-        <div class="description">
-            <h3>Description</h3>
-            <textarea id="description" name="description" placeholder="The product's description"></textarea>
-        </div>
-
-        <div class="price">
-            <h3>Price</h3>
-            <textarea id="price" name="price" placeholder="Price of product"></textarea>
-        </div>
-        <div class="twobutton">
-
-            <button id="saveButton" class="editButton"><img src="../../img/icons/save-icon.png" alt="">Save</button>
-            <button id="cancelButton" class="deleteButton"><img src="../../img/icons/cancel-icon.png" alt="">Cancel
-            </button>
-        </div>
+    <div class="name">
+        <h3>Name</h3>
+        <input name="name" id="name" placeholder="Name of Product">
 
     </div>
+    <div class="description">
+        <h3>Description</h3>
+        <textarea id="description" name="description" placeholder="The product's description"></textarea>
+    </div>
 
+    <div class="price">
+        <h3>Price</h3>
+        <input id="price" name="price" placeholder="Price of product">
+    </div>
+    <div class="twoButtons">
 
-    <!-- <div id="imageUploadCont">
-
-         <input type="file" id="image_input" accept="image/jpeg, image/png">
-         <div id="display_image"></div>
-
-     </div>-->
+        <button id="saveButton" class="editButton"><img src="../../img/icons/save-icon.png" alt="">Save</button>
+        <button id="cancelButton" class="deleteButton"><img src="../../img/icons/cancel-icon.png" alt="">Cancel
+        </button>
+    </div>
 
 </div>
+
+
+<!-- <div id="imageUploadCont">
+
+     <input type="file" id="image_input" accept="image/jpeg, image/png">
+     <div id="display_image"></div>
+
+ </div>-->
+
 <script rel="stylesheet" src="../../js/admin/editProduct.js" type="module" defer></script>
