@@ -1,5 +1,4 @@
-
-
+const addProductButton = document.getElementById("addProductButton")
 const saveButton = document.getElementById("saveButton");
 const cancelButton = document.getElementById("cancelButton");
 const url= "http://localhost:8080/products";
@@ -26,7 +25,7 @@ priceTag.addEventListener("change", (event) => {
 
 cancelButton.addEventListener("click", () => {
 
-        window.location.href = "productsAdmin.html";
+        window.location.href = "adminProducts.html";
 
 });
 
@@ -60,10 +59,14 @@ console.log(name,description,price)
 
 
                         alert("Product was successfully added");
-                        window.location.href = "productsAdmin.html";
+                        window.location.href = "adminProducts.html";
                     }
 
                 }
             )
     }
 );
+
+addProductButton.addEventListener('click', (e) => {
+    $('#cont').load('./addProduct.html');
+})

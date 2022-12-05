@@ -1,4 +1,4 @@
-import { getAll  } from "./service/API_calls.js";
+import { getAll  } from "../service/API_calls.js";
 
 const products = document.querySelector('#products')
 const productId = document.getElementById("chosenProductId")
@@ -20,12 +20,10 @@ getAll("products").then(r => {
 
         a.addEventListener('click', () =>{
             productId.value = item.id
-            console.log("clicked the event")
-            $('#cont').load("popUpPage.html")
+            $('#cont').load("adminProductPopUpPage.html")
         })
 
         a.appendChild(div)
         products.appendChild(a)
     })
 })
-
