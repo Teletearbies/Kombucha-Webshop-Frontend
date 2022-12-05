@@ -11,10 +11,15 @@ getAll("products").then(r => {
         let productName = document.createElement("productName")
 
         div.className = "products";
+
         a.id = item.id;
+        a.style.textDecorationLine = "none";
+
+        productName.style.backgroundColor = "rgba(255,255,255,0.8)";
+        productName.style.borderRadius ="25px 25px 0 0";
         productName.innerText = item.name;
         productName.style.display = "none";
-        a.style.textDecorationLine = "none";
+
         div.style.transition = "1s";
         div.style.color = "#fc9721";
         div.style.textAlign = "CENTER";
