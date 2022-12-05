@@ -23,15 +23,13 @@
 .products {
     height: 50rem;
     width: 30rem;
-    transition: transform .6s;
 
     border-radius: 25px;
 }
 
 .products:hover {
     transform: scale(1.11);
-    border: 2px solid black;
-
+    border: 3px solid rgba(252,151,33,1);
 }
 
 .addProduct {
@@ -40,12 +38,13 @@
     font-size: 30px;
     height: 50rem;
     width: 30rem;
-    transition: transform .6s;
+    transition: transform 1s;
     border-radius: 25px;
 }
 
 .addProduct:hover {
     transform: scale(1.11);
+    border: 2px solid rgba(252,151,33,1);
 }
 
 
