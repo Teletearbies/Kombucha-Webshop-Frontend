@@ -18,10 +18,12 @@
     height: 30rem;
     width: 30rem;
     transition: transform .6s;
+    border-radius: 25px;
 }
 
 .products:hover {
     transform: scale(1.11);
+    border: 3px solid rgba(252,151,33,1);
 }
 
 .products_box {
