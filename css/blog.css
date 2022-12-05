@@ -19,6 +19,7 @@
     background-color: #FFF;
     border-radius: 30px;
     text-align: center;
+
 }
 
 
@@ -186,7 +187,7 @@ a.read_more:hover {
     position: relative;
     left: 0;
     padding: 2px;
-    top: 150px;
+    top: 100px;
     width: 100%;
     color: #78797d;
     font-size: 14px;
@@ -195,4 +196,35 @@ a.read_more:hover {
 
 .footer-blog .fa {
     color: #7f5feb;;
+}
+
+.nav {
+    display: flex;
+    background-color: #022539;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    width: 100%;
+    padding: 0 6rem;
+    z-index: 100;
+}
+
+.header-blog {
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.nav-blog {
+    display: flex;
+    background-color: #022539;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    width: 100%;
+    padding: 0 6rem;
+    z-index: 100;
+    padding-top: 10px;
 }
