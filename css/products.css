@@ -81,3 +81,16 @@
     align-items: center;
     justify-content: center;
 }
+
+/*
+.product_container{
+    width: 30vw;
+    min-height: 100rem;
+    min-width: 50rem;
+    padding: 3rem;
+    margin: 0 auto;
+    font-weight: bold;
+    display: grid;
+    justify-content: center;
+
+}*/
