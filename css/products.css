@@ -17,7 +17,16 @@
     grid-gap: 4rem;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
+}
 
+.product_container{
+    width: 30vw;
+    min-height: 100rem;
+    min-width: 50rem;
+    margin: 0 auto;
+    font-weight: bold;
+    display: grid;
+    justify-content: center;
 }
 
 .products {

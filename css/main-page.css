@@ -1,17 +1,13 @@
 .product_container{
-
     width: 30vw;
-
     height: 35vw;
     min-height: 50rem;
     min-width: 50rem;
-    padding-left: 170px;
+    padding: 3rem;
     margin: 0 auto;
     font-weight: bold;
-
     display: grid;
     justify-content: center;
-
 }
 
 .products {

@@ -49,15 +49,6 @@
     border-radius: 0 25px 25px 0;
 }
 
-.closebtn {
-    text-align: right;
-}
-
-.closebutton {
-    height: 10px;
-    width: 10px;
-}
-
 .addProducts_popup_bigbox {
     border-radius: 25px;
     width: 50%;
@@ -66,62 +57,11 @@
     position: fixed;
     left: 40%;
     top: 0;
-    line-height: 1.5;
+    line-height: 1.2;
     display: block;
     vertical-align: middle;
     min-height: 100vh;
     z-index: +2;
-}
-
-.twoButtons {
-    text-align: center;
-    padding-top: 40px;
-    justify-content: center;
-}
-
-.editButton {
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 24px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 15px;
-}
-
-.editButton:hover {
-    background-color: #3da942;
-}
-
-.editButton:active {
-    transform: translateY(4px);
-}
-
-.deleteButton {
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 24px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: #e10a0a;
-    border: none;
-    border-radius: 15px;
-
-}
-
-.deleteButton:hover {
-    background-color: #b70c0c
-}
-
-.deleteButton:active {
-    transform: translateY(4px);
 }
 
 .editProductBox {
