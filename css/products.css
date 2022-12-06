@@ -17,21 +17,28 @@
     grid-gap: 4rem;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
+}
 
+.product_container{
+    width: 30vw;
+    min-height: 100rem;
+    min-width: 50rem;
+    margin: 0 auto;
+    font-weight: bold;
+    display: grid;
+    justify-content: center;
 }
 
 .products {
     height: 50rem;
     width: 30rem;
-    transition: transform .6s;
 
     border-radius: 25px;
 }
 
 .products:hover {
     transform: scale(1.11);
-    border: 2px solid black;
-
+    border: 3px solid rgba(252,151,33,1);
 }
 
 .addProduct {
@@ -40,12 +47,13 @@
     font-size: 30px;
     height: 50rem;
     width: 30rem;
-    transition: transform .6s;
+    transition: transform 1s;
     border-radius: 25px;
 }
 
 .addProduct:hover {
     transform: scale(1.11);
+    border: 2px solid rgba(252,151,33,1);
 }
 
 

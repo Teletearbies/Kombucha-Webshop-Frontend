@@ -1,28 +1,25 @@
 .product_container{
-
     width: 30vw;
-
     height: 35vw;
     min-height: 50rem;
     min-width: 50rem;
-    padding-left: 170px;
+    padding: 3rem;
     margin: 0 auto;
     font-weight: bold;
-
-
     display: grid;
     justify-content: center;
-
 }
 
 .products {
     height: 30rem;
     width: 30rem;
     transition: transform .6s;
+    border-radius: 25px;
 }
 
 .products:hover {
     transform: scale(1.11);
+    border: 3px solid rgba(252,151,33,1);
 }
 
 .products_box {
@@ -40,6 +37,11 @@
     flex-direction: column;
     align-items: center;
 }
+
+.kalle_logo{
+    margin-top: 5rem;
+}
+
 .btnK {
     display: inline-block;
     background-color: #ebf506;
