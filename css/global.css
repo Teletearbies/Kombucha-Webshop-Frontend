@@ -1,5 +1,5 @@
 :root {
-    --color-primary: #fc9721;
+    --color-primary: #efb877;
     --color-secondary: #ffcb03;
     --color-tertiary: #ff585f;
     --color-primary-darker: #4bbb7d;
@@ -104,6 +104,8 @@ body {
     padding-bottom: 50px;
 }
 
+
+
 .btn {
     display: inline-block;
     background-color:#022539;
@@ -150,7 +152,7 @@ body {
 }
 
 .btn:hover {
-    background-color: #FB991C;
+    background-color: transparent;
 }
 
 .btn--text {
@@ -247,10 +249,65 @@ i {
 
 .nav__link--btn:hover,
 .nav__link--btn:active {
-    color: #e1c223;
+
     background-color: #022539;
-    color: #333;
+    color: transparent;
 }
+
+/*----- ABOUT DROP DOWN -----*/
+
+/* The dropdown container */
+.dropdown {
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #FB991C;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin-left: 27px; /* Important for vertical align on mobile phones */
+}
+
+
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffc480;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #b9905b;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
 
 /* HEADER */
 .header {
@@ -546,135 +603,7 @@ h4 {
     font-weight: 400;
 }
 
-/* CARD STYLE */
-.container {
-    float: left;
-    height: 500px;
-    width: 2000px;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    padding-right: 30%;
-}
 
-.container .card {
-    position: relative;
-    border-radius: 10px;
-    height: 65%;
-}
-
-.container .card .icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 200%;
-    background: #f76afc;
-    transition: 0.7s;
-    z-index: 1;
-    padding-right: 100px;
-}
-
-.container .card:nth-child(1) .icon {
-    background: #e07768;
-}
-
-.container .card:nth-child(2) .icon {
-    background: #6eadd4;
-}
-
-.container .card:nth-child(3) .icon {
-    background: #4aada9;
-}
-
-.container .card:nth-child(4) .icon {
-    background: #fcf56a;
-}
-
-.container .card:nth-child(4) .icon {
-     background: #7d6afc;
-}
-
-.container .card .icon .fa {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 80px;
-    transition: 0.7s;
-    color: #ce4e4e;
-}
-
-.container .card .face {
-    width: 300px;
-    height: 200px;
-    transition: 0.5s;
-}
-
-.container .card .face.face1 {
-    position: relative;
-    background: #ab2626;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    transform: translateY(100px);
-}
-
-.container .card:hover .face.face1{
-    background: #ff0057;
-    transform: translateY(0px);
-}
-
-.container .card .face.face1 .content {
-    opacity: 1;
-    transition: 0.5s;
-}
-
-.container .card:hover .face.face1 .content {
-    opacity: 1;
-}
-
-.container .card .face.face1 .content i{
-    max-width: 100px;
-}
-
-.container .card .face.face2{
-    position: relative;
-    background: #f6aa4a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
-    transform: translateY(-100px);
-}
-
-
-.container .card:hover .face.face2{
-    transform: translateY(0);
-}
-
-.container .card .face.face2 .content p {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    color: #414141;
-}
-
-.container .card .face.face2 .content h3 {
-    margin: 0 0 10px 0;
-    padding: 0;
-    font-size: 24px;
-    text-align: center;
-    color: #fce4c6;
-}
-
-.container a {
-    text-decoration: none;
-    color: #414141;
-}
 
 /* PRODUCTS SECTION*/
 
@@ -738,3 +667,7 @@ h4 {
 .deleteButton:active {
     transform: translateY(4px);
 }
+
+
+/* --- button test ----*/
+

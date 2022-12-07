@@ -1,0 +1,129 @@
+body{
+
+    margin: 0;
+    --x: calc(var(--posX, 0) * 1px);
+    --y: calc(var(--posY, 0) * 1px);
+    background-image:
+            linear-gradient(115deg, rgb(152, 103, 103), rgb(245, 176, 176)),
+            radial-gradient( 90% 100% at calc( 50% + var(--x)) calc( 0% + var(--y)), rgb(200 200 200), rgb(201, 170, 234)),
+            radial-gradient(100% 100% at calc( 80% - var(--x)) calc( 0% - var(--y)), rgb(236, 226, 127), rgb(150, 108, 130)),
+            radial-gradient(150% 210% at calc(100% + var(--x)) calc( 0% + var(--y)), rgb(196, 107, 107), rgb(187, 142, 104)),
+            radial-gradient(100% 100% at calc(100% - var(--x)) calc(30% - var(--y)), rgb(234, 141, 101), rgb(238, 206, 146)),
+            linear-gradient(60deg, rgb(245, 131, 131), rgb(246, 204, 182));
+    background-blend-mode: overlay, overlay, difference, difference, difference, normal;
+}
+
+.sectionKalle {
+    padding: 15rem 3rem;
+    /*border-top: 1px solid #022539;*/
+    transition: transform 1s, opacity 1s;
+    overflow-y: scroll;
+}
+
+.headerK {
+    padding: 0 3rem;
+    height: 0vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section__titleK {
+    max-width: 400rem;
+    margin: 0 auto 8rem auto;
+}
+
+.section__descriptionK {
+    font-size: 5.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.section__headerK {
+    font-size: 4rem;
+    line-height: 1.3;
+    font-weight: 500;
+    color: #f1deba;
+    text-align: center;
+}
+
+.footerK {
+    padding: 3rem 3rem;
+    background-color: transparent;
+    display: flex;
+}
+
+
+/*----- SOME GLOW BUTTONS -----*/
+
+
+.containerSoMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 100vw;
+}
+#apple,
+#twitter,
+#github,
+#facebook {
+    font-size: 1em;
+    background-color: transparent;
+    color: #fff;
+
+    border-radius: 29px;
+    padding: 11px 19px;
+    margin: 5px;
+    animation: animate 3s linear infinite;
+    text-shadow: 0 0 10px #0072ff, 0 0 20px #ffcc00, 0 0 30px #0072ff,
+    0 0 40px #0072ff;
+}
+#twitter {
+    animation-delay: 0.1s;
+}
+#facebook {
+    animation-delay: 0.1s;
+}
+#github {
+    animation-delay: 0.1s;
+}
+
+@keyframes animate {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+#frame{
+    position:relative;
+    padding:0;
+    border:solid 15px #444444;
+    max-width:600px;
+    margin:40px auto;
+    box-shadow:-3px -3px 12px #2c2b2b;
+
+}
+#border{
+    position:relative;
+    padding:0;
+    margin:0;
+    border:solid 70px #f1e2e2;
+    box-shadow:-3px -3px 12px #818181;
+}
+img{
+    display:block;
+    padding:0;
+    margin:0;
+    width:100%;
+    height:auto;
+    border-top:solid 2px #aaa;
+    border-left:solid 2px #aaa;
+    border-bottom:solid 2px #ccc;
+    border-right:solid 2px #ccc;
+}

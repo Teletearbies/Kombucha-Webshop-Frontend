@@ -3,26 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+
     <link
             href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
             rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/global.css"/>
-    <link rel="stylesheet" href="../css/registration.css"/>
+    <link rel="stylesheet" href="../css/aboutKalle.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/main-page.css" />
 
-    <title>Kalle's Kombucha registration page</title>
+
+    <title>About Kalle</title>
 </head>
-
-<header class="header-login">
-    <nav class="nav">
+<body>
+<header class="headerK">
+    <nav class="nav" id="nav">
         <a onclick="window.location='main-page.html'" type="button">
             <img
                     src="../img/logos/Logo_small.bmp"
-                    alt="Bankist logo"
+                    alt="Kalle small logo"
                     class="nav__logo"
                     id="logo"
-                    data-version-number="3.0"
+                    data-version-number = "3.0"
             /></a>
+
         <ul class="nav__links">
             <li class="nav__item">
                 <a class="nav__link" href="products.html">Products</a>
@@ -41,64 +45,67 @@
                 </div>
             </div>
             <li class="nav__item">
-                <a class="nav__link" href="blog.html">Blog</a>
+                <a class="nav__link" href="../html/blog.html">Blog</a>
             </li>
             <li class="nav__item">
                 <button class="btn btn-default" onclick="window.location='login.html'" type="button"
-                ><i class="fa-solid fa-cart-shopping"></i>
+                >  <i class="fa-solid fa-cart-shopping"></i>
                 </button>
                 <button class="btn btn-default" onclick="window.location='login.html'" type="button"
-                ><i class="fa-solid fa-user"></i>
+                > <i class="fa-solid fa-user"></i>
                 </button>
             </li>
         </ul>
     </nav>
 </header>
 
-<body id="particles-js"></body>
-<div class="animated bounceInDown">
-    <div class="container-login">
-        <span class="error animated data" id="msg"></span>
-        <form name="form2" class="box" onsubmit="return createStuff()">
-            <span></span>
-            <h4>Register to create your account</h4>
-            <input type="text" name="username" placeholder="Username" autocomplete="off" required minlength="6" maxlength="15" title="Insufficient length">
-            <input type="text" name="email" placeholder="Email" autocomplete="off" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Invalid email address">
-            <i class="typcn typcn-eye" id="eye"></i>
-            <input type="password" name="password" placeholder="Passsword" id="pwd" autocomplete="off" required minlength="8" maxlength="32" title="Password not long enough">
-            <input type="submit" value="Register" class="btn1">
-        </form>
-        <a href="login.html" class="doeshave">You already have an account? Log in</a>
-    </div>
 
-    <section class="footer-login">
-        <div class="section__title">
+<section class="sectionKalle">
+    <div class="section__titleK">
+
+        <img src="../img/kallePhoto/KallePhoto.png" alt="Terracotta female statue" class="frame">
+
+        <h2 class="section__descriptionK">Kalle</h2>
+        <h3 class="section__headerK">
+            Kalle is the new hot shot on the kombucha scene.
+        </h3>
+        <h3 class="section__header">
+            STUFFFSTUFFFSTUFFFSTUFFFSTUFFFSTUFFFSTUFFFSTUFFFSTUFFFSTUFFF</h3>
+        <h3 class="section__header"
+        > AMAzingAMAzingAMAzingAMAzingAMAzingAMAzingAMAzingAMAzing</h3>
+        <h3 class="section__header"
+        > wowowowowowowowowowowowowowowowowowowowowow</h3>
+    </div>
+</section>
+
+<footer>
+    <section class="footerK" >
+        <div class="containerSoMe">
+            <div class="section__title">
             <h3 class="footer__link">
                 Find us @
             </h3>
-            <a href="https://www.facebook.com/" class="btn footer__btn"
-            > <i class="fa-brands fa-facebook"></i>
+            <a href="https://www.facebook.com/"  class="btn footer__btn"
+            > <i class="fa-brands fa-facebook" id="facebook"></i>
             </a>
-            <a href="https://www.instagram.com/" class="btn footer__btn"
-            > <i class="fa-brands fa-instagram"></i>
+            <a  href="https://www.instagram.com/"  class="btn footer__btn"
+            > <i class="fa-brands fa-instagram" id="apple"></i>
             </a>
             <a href="https://twitter.com/" class="btn footer__btn"
-            > <i class="fa-brands fa-twitter"></i>
+            > <i class="fa-brands fa-twitter" id="twitter"></i>
             </a>
             <a href="https://www.linkedin.com/" class="btn footer__btn"
-            > <i class="fa-brands fa-linkedin"></i>
+            > <i class="fa-brands fa-linkedin" id="github"></i>
             </a>
 
             <p class="footer__copyright">© 2022 Kalle's Kombucha</p>
+            </div>
         </div>
     </section>
-
-</div>
-
-
+</footer>
+<script src="../js/aboutKalle.js" type="module" defer></script>
+<script src="../js/hideNavBar.js" type="module" defer></script>
 <script src="https://kit.fontawesome.com/4a85efafbc.js" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js"
-        integrity="sha256-2JRzNxMJiS0aHOJjG+liqsEOuBb6++9cY4dSOyiijX4=" crossorigin="anonymous"></script>
 
 </body>
 </html>
