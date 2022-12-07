@@ -12,10 +12,10 @@ getAll("blogs").then(product => {
         let author = document.createElement("p")
 
         div.className = "card_body"
+        blogDate.className = "card_date"
         blogDescription.className = "card_body"
         blogTitle.className = "card_title"
         author.className = "card_author"
-        blogDate.className = "card_date"
 
         blogDate.innerText = item.date
         blogTitle.innerText = item.title

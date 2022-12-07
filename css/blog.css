@@ -1,11 +1,7 @@
 .blog_container {
-    max-width: 90%;
     margin: 5vh auto;
-    height: 100%;
-    background-color: gray;
     justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    max-width: 80%;
 }
 
 .blog_card {
@@ -13,6 +9,9 @@
     padding: 20px;
     border-radius: 30px;
     text-align: center;
+    display: grid;
+    grid-gap: 4rem;
+    grid-template-columns: repeat(4, 1fr)
 }
 
 .card_body {
@@ -21,6 +20,8 @@
     border-radius: 25px;
     padding: 0 10px 0 10px;
 }
+
+
 
 .card_date {
     font-family: 'Merriweather',
@@ -50,6 +51,7 @@
 p.card_author {
     font-size: 15px;
     padding-top: 15px;
+
 }
 
 
