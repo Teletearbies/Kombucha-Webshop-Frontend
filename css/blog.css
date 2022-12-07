@@ -4,24 +4,31 @@
     max-width: 80%;
 }
 
-.blog_card {
+.grid {
     max-width: 100%;
     padding: 20px;
     border-radius: 30px;
     text-align: center;
     display: grid;
     grid-gap: 4rem;
-    grid-template-columns: repeat(4, 1fr)
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .card_body {
+    height: 20vh;
     background: white;
     margin: 10px;
     border-radius: 25px;
     padding: 0 10px 0 10px;
 }
 
-
+.card_body_open {
+    background: white;
+    margin: 10px;
+    border-radius: 25px;
+    padding: 0 10px 0 10px;
+    z-index: 3;
+}
 
 .card_date {
     font-family: 'Merriweather',
@@ -42,10 +49,25 @@
     padding-bottom: 20px;
 }
 
-.card_body p {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.7;
+.showMoreButton {
+    font-size: 20px;
+    text-decoration-line: underline;
+    margin: 20px;
+    cursor: grab;
+}
+
+p.card_description {
+    font-family: 'Merriweather',
+    serif;
+    font-size: 22px;
+    height: 40px;
+    overflow:hidden;
+}
+
+p.card_description_open {
+    font-family: 'Merriweather',
+    serif;
+    font-size: 22px;
 }
 
 p.card_author {
@@ -53,7 +75,6 @@ p.card_author {
     padding-top: 15px;
 
 }
-
 
 .footer-blog {
     position: relative;
