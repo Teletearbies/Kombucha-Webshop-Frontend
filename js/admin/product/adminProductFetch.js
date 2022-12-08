@@ -1,4 +1,4 @@
-import { getAll  } from "../service/API_calls.js";
+import { getAll  } from "../../service/API_calls.js";
 
 const products = document.querySelector('#products')
 const productId = document.getElementById("chosenProductId")
