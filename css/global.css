@@ -44,7 +44,7 @@ body {
 .sectionProducts {
     padding: 20rem 3rem;
     /*border-top: 1px solid #022539;*/
-    background: linear-gradient(  #022539, #0f3b56,  #46b7a1);
+    background: linear-gradient(#022539, #0f3b56, #46b7a1);
 
     transition: transform 1s, opacity 1s;
     overflow-y: scroll;
@@ -53,7 +53,7 @@ body {
 .sectionAbout {
     padding: 22rem 3rem;
     /*border-top: 1px solid #022539;*/
-    background: linear-gradient( #46b7a1, #6e5f98);
+    background: linear-gradient(#46b7a1, #6e5f98);
 
     transition: transform 1s, opacity 1s;
     overflow-y: scroll;
@@ -105,10 +105,9 @@ body {
 }
 
 
-
 .btn {
     display: inline-block;
-    background-color:#022539;
+    background-color: #022539;
     font-size: 1.6rem;
     font-family: inherit;
     font-weight: 500;
@@ -254,6 +253,15 @@ i {
     color: transparent;
 }
 
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 /*----- ABOUT DROP DOWN -----*/
 
 /* The dropdown container */
@@ -275,14 +283,13 @@ i {
 }
 
 
-
 /* Dropdown content (hidden by default) */
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #ffc480;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -306,7 +313,6 @@ i {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 
 
 /* HEADER */
@@ -604,9 +610,7 @@ h4 {
 }
 
 
-
 /* PRODUCTS SECTION*/
-
 
 
 .closebtn {
