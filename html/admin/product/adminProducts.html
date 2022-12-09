@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <script
             src="https://code.jquery.com/jquery-3.6.1.js"
             integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
             crossorigin="anonymous"></script>
 
-    <script src="../../../js/admin/adminProductFetch.js" type="module" defer></script>
-    <script src="../../../js/admin/addProductPopUpClick.js" type="module" defer></script>
+    <script src="../../../js/admin/product/adminProductFetch.js" type="module" defer></script>
+    <script src="../../../js/admin/product/addProductPopUpClick.js" type="module" defer></script>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     <link
@@ -19,9 +20,7 @@
     <link rel="stylesheet" href="../../../css/products.css"/>
     <link rel="stylesheet" href="../../../css/productPopUpStyle.css"/>
 
-
-    <title>Kalle's Kombucha</title>
-
+    <title>Products (Admin)</title>
 
 </head>
 
@@ -42,9 +41,16 @@
             <li class="nav__item">
                 <a class="nav__link" href="../../locations.html">Locations</a>
             </li>
-            <li class="nav__item">
-                <a class="nav__link" href="../../about.html">About</a>
-            </li>
+            <div class="dropdown">
+                <button class="dropbtn">About
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../../aboutKalle.html">Kalle</a>
+                    <a href="../../aboutKombucha.html">Kombucha</a>
+                    <a href="../../contactInformation.html">Contact Information</a>
+                </div>
+            </div>
             <li class="nav__item">
                 <a class="nav__link" href="../../blog.html">Blog</a>
             </li>
@@ -76,7 +82,10 @@
         <div class="products_box" id="products">
             <div class="products_box">
 
-                <button id="addProductButton" class="addProduct" style="background-image: radial-gradient(circle, #386ecb, #3668d6, #3258ca, #1b38d0, #3036b1);">Add new</button>
+                <button id="addProductButton" class="addProduct"
+                        style="background-image: radial-gradient(circle, #386ecb, #3668d6, #3258ca, #1b38d0, #3036b1);">
+                    Add new
+                </button>
             </div>
         </div>
     </div>
@@ -105,7 +114,6 @@
     </div>
 </section>
 </footer>-->
-
 
 <script src="https://kit.fontawesome.com/4a85efafbc.js" crossorigin="anonymous"></script>
 

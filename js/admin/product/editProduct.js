@@ -17,13 +17,13 @@ async function getMe() {
     quantity = response.quantity
 }
 
-async function editActivity(activity) {
+async function editProduct(product) {
     fetch(url, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(activity)
+        body: JSON.stringify(product)
     })
         .then(response => response.json())
         .then(data => console.log(data))
@@ -34,7 +34,7 @@ async function editActivity(activity) {
 saveButton.addEventListener('click', (e) => {
     e.preventDefault()
     if (nameTag.value != "" && descriptionTag.value != "" && priceTag.value != "") {
-        editActivity({
+        editProduct({
                 "id": productId.value,
                 "name": nameTag.value,
                 "description": description.value,

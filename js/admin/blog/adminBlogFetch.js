@@ -1,6 +1,7 @@
-import {getAll} from "./service/API_calls.js"
+import {getAll} from "../../service/API_calls.js"
 
-const blog = document.querySelector('#grid')
+const grid = document.querySelector('#grid')
+const blogId = document.getElementById("blogId")
 
 getAll("blogs").then(product => {
     console.log(product)
@@ -11,6 +12,16 @@ getAll("blogs").then(product => {
         let blogDescription = document.createElement("p")
         let author = document.createElement("p")
         let showMore = document.createElement("a")
+        let editButton = document.createElement("button")
+        let deleteButton = document.createElement("button")
+        let twoButtons = document.createElement("div")
+
+        editButton.className = "editButton"
+        editButton.id = item.id
+        deleteButton.className = "deleteButton"
+        deleteButton.id = item.id
+        twoButtons.className = "twoButtons"
+
         div.className = "card_body"
         blogDate.className = "card_date"
         blogTitle.className = "card_title"
@@ -36,12 +47,28 @@ getAll("blogs").then(product => {
             }
         })
 
+        editButton.addEventListener('click', () =>{
+            blogId.value = item.id;
+            $('#cont').load("editBlog.html")
+        })
+
+        deleteButton.addEventListener('click', () =>{
+            blogId.value = item.id;
+            $('#cont').load("deleteBlog.html")
+        })
+
+        twoButtons.appendChild(editButton)
+        twoButtons.appendChild(deleteButton)
+
         div.appendChild(blogDate)
         div.appendChild(blogTitle)
         div.appendChild(blogDescription)
         div.appendChild(showMore)
         div.appendChild(author)
-        blog.appendChild(div)
+
+        grid.appendChild(div)
+        grid.appendChild(twoButtons)
     })
 })
+
 

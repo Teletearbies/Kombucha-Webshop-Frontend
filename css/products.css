@@ -17,6 +17,7 @@
     grid-gap: 4rem;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
+    cursor: pointer;
 }
 
 .product_container{
@@ -49,6 +50,7 @@
     width: 30rem;
     transition: transform 1s;
     border-radius: 25px;
+    cursor: pointer;
 }
 
 .addProduct:hover {
