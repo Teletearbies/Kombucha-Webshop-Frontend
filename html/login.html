@@ -50,22 +50,22 @@
 
 </header>
 
-<body id="particles-js"></body>
+<body></body>
 <div class="animated bounceInDown">
   <div class="container-login">
     <span class="error animated data" id="msg"></span>
-    <form name="form1" class="box" onsubmit="return checkStuff()">
+    <form name="form1" class="box">
    <span></span>
       <h5>Sign in to your account.</h5>
-      <input type="text" name="email" placeholder="Email" autocomplete="off">
+      <input type="text" id="username" name="username" placeholder="Email" autocomplete="off">
       <i class="typcn typcn-eye" id="eye"></i>
-      <input type="password" name="password" placeholder="Passsword" id="pwd" autocomplete="off">
+      <input type="password" id="password" name="password" placeholder="Passsword" autocomplete="off">
       <label>
         <input type="checkbox">
         <span></span>
         <small class="rmb">Remember me</small>
       </label>
-      <input type="submit" value="Sign in" class="btn1">
+      <input type="submit" id="sign-in-button" value="Sign in" class="btn1" onclick="loginUser()">
     </form>
     <a href="registration.html" class="dnthave">Don’t have an account? Sign up</a>
   </div>
@@ -98,6 +98,7 @@
 <script src="https://kit.fontawesome.com/4a85efafbc.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js"
         integrity="sha256-2JRzNxMJiS0aHOJjG+liqsEOuBb6++9cY4dSOyiijX4=" crossorigin="anonymous"></script>
+<script src="../js/login/login.js"></script>
 
 </body>
 </html>
