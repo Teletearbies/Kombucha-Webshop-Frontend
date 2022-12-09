@@ -5,7 +5,6 @@ const url= "http://localhost:8080/products";
 const nameTag = document.getElementById("name");
 const descriptionTag = document.getElementById("description");
 const priceTag = document.getElementById("price")
-const quantity = 1
 
 
 
@@ -43,8 +42,7 @@ console.log(name,description,price)
             body: JSON.stringify({
                 name: name,
                 description: description,
-                price: price,
-                quantity: quantity
+                price: price
             }),
         })
             .then((response) => response.json())
