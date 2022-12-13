@@ -4,7 +4,6 @@ const grid = document.querySelector('#grid')
 const blogId = document.getElementById("blogId")
 
 getAll("blogs").then(product => {
-    console.log(product)
     product.reverse().forEach(item => {
         let div = document.createElement("div")
         let blogDate = document.createElement("p")
@@ -52,12 +51,12 @@ getAll("blogs").then(product => {
 
         editButton.addEventListener('click', () =>{
             blogId.value = item.id;
-            $('#cont').load("editBlog.html")
+            $('#cont').load("edit-blog.html")
         })
 
         deleteButton.addEventListener('click', () =>{
             blogId.value = item.id;
-            $('#cont').load("deleteBlog.html")
+            $('#cont').load("delete-blog.html")
         })
 
         twoButtons.appendChild(editButton)
@@ -73,5 +72,3 @@ getAll("blogs").then(product => {
         grid.appendChild(twoButtons)
     })
 })
-
-

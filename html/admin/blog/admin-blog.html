@@ -10,7 +10,6 @@
 
     <script src="../../../js/admin/blog/adminBlogFetch.js" type="module" defer></script>
     <script src="../../../js/admin/blog/addBlogPopUpClick.js" type="module" defer></script>
-    <script src="../../../js/admin/blog/editBlogPopUpClick.js" type="module" defer></script>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 
@@ -29,7 +28,7 @@
     <nav class="nav-blog">
         <a onclick="window.location='../../main-page.html'" type="button">
             <img
-                    src="../../../img/logos/Logo_small.bmp"
+                    src="../../../img/logos/logo-small.bmp"
                     alt="Bankist logo"
                     class="nav__logo"
                     id="logo"
@@ -47,27 +46,25 @@
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                    <a href="../../aboutKalle.html">Kalle</a>
-                    <a href="../../aboutKombucha.html">Kombucha</a>
-                    <a href="../../contactInformation.html">Contact Information</a>
+                    <a href="../../about-kalle.html">Kalle</a>
+                    <a href="../../about-kombucha.html">Kombucha</a>
+                    <a href="../../contact-information.html">Contact Information</a>
                 </div>
             </div>
-            <li class="nav__item">
                 <div class="dropdown">
                     <button class="dropbtn">Blog
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
                         <a href="../../blog.html">Blog</a>
-                        <a href="adminBlog.html">Admin Blog</a>
+                        <a href="admin-blog.html">Admin Blog</a>
                     </div>
                 </div>
-            </li>
             <li class="nav__item">
-                <button class="btn btn-default" onclick="window.location='login.html'" type="button"
+                <button class="btn btn-default" onclick="window.location='../../login.html'" type="button"
                 ><i class="fa-solid fa-cart-shopping"></i>
                 </button>
-                <button class="btn btn-default" onclick="window.location='login.html'" type="button"
+                <button class="btn btn-default" onclick="window.location='../../login.html'" type="button"
                 ><i class="fa-solid fa-user"></i>
                 </button>
 
@@ -77,14 +74,12 @@
 
 </header>
 
-<section>
     <div class="blog_container" id="blogContainer">
         <button id="addBlogButton" class="addNewBlogButton">Add new</button>
         <div class="adminGrid" id="grid">
 
         </div>
     </div>
-</section>
 
 <section>
     <div id="cont"></div>

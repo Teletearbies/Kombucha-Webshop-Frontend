@@ -14,14 +14,14 @@ async function deleteBlog() {
     })
         .then(data => {
             if (data.status === 200) {
-                window.location.replace("adminBlog.html")
+                window.location.replace("admin-blog.html")
             }
         })
         .catch(err => console.log(err))
 }
 
 function cancel() {
-    window.location.replace("adminBlog.html")
+    window.location.replace("admin-blog.html")
 }
 
 confirmButton.addEventListener('click', deleteBlog)

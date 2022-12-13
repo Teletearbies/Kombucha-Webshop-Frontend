@@ -15,7 +15,7 @@ async function deleteProduct()
     })
         .then(data => {
             if (data.status === 200) {
-                window.location.replace("adminProducts.html")
+                window.location.replace("admin-products.html")
             }
         })
         .catch(err => console.log(err))
@@ -24,7 +24,7 @@ async function deleteProduct()
 
 function cancel()
 {
-    window.location.replace("adminProducts.html")
+    window.location.replace("admin-products.html")
 }
 
 confirmButton.addEventListener('click', deleteProduct)

@@ -1,9 +1,9 @@
 const addProductButton = document.getElementById("addProductButton")
-const saveButton = document.getElementById("saveButton");
-const cancelButton = document.getElementById("cancelButton");
-const url= "http://localhost:8080/products";
-const nameTag = document.getElementById("name");
-const descriptionTag = document.getElementById("description");
+const saveButton = document.getElementById("saveButton")
+const cancelButton = document.getElementById("cancelButton")
+const url= "http://localhost:8080/products"
+const nameTag = document.getElementById("name")
+const descriptionTag = document.getElementById("description")
 const priceTag = document.getElementById("price")
 
 
@@ -12,21 +12,21 @@ let name = ""
 let description = ""
 let price = ""
 nameTag.addEventListener("change", (event) => {
-    name = event.target.value;
-});
+    name = event.target.value
+})
 descriptionTag.addEventListener("change", (event) => {
-    description = event.target.value;
-});
+    description = event.target.value
+})
 priceTag.addEventListener("change", (event) => {
-    price = event.target.value;
-});
+    price = event.target.value
+})
 
 
 cancelButton.addEventListener("click", () => {
 
-        window.location.href = "adminProducts.html";
+        window.location.href = "admin-products.html";
 
-});
+})
 
 
 saveButton.addEventListener("click", () => {
@@ -51,20 +51,20 @@ console.log(name,description,price)
                     if (data.status === 400  || data.status === 402 || data.status=== null) {
                         //make a sound for success or failure
 
-                        alert("Product was not added!");
+                        alert("Product was not added!")
 
                     }else   {
 
 
-                        alert("Product was successfully added");
-                        window.location.href = "adminProducts.html";
+                        alert("Product was successfully added")
+                        window.location.href = "admin-products.html"
                     }
 
                 }
             )
     }
-);
+)
 
 addProductButton.addEventListener('click', (e) => {
-    $('#cont').load('./addProduct.html');
+    $('#cont').load('./add-product.html')
 })

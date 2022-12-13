@@ -1,13 +1,13 @@
 const apiUrl = 'http://localhost:8080/loginuser'
 
-const username = document.getElementById("username");
-const password = document.getElementById("password");
-const signInButton = document.getElementById("sign-in-button");
+const username = document.getElementById("username")
+const password = document.getElementById("password")
+const signInButton = document.getElementById("sign-in-button")
 
 function loginUser() {
 
-   let usernameValue = username.value;
-   let passwordValue = password.value;
+   let usernameValue = username.value
+   let passwordValue = password.value
 
 console.log(usernameValue, passwordValue)
  fetch(apiUrl,
@@ -27,12 +27,12 @@ console.log(usernameValue, passwordValue)
             if (data.status === 400  || data.status === 402 || data.status=== null) {
                 //make a sound for success or failure
 
-                alert("wrong username or password");
+                alert("Wrong username or password!");
 
             }else   {
 
 
-                alert("login sucessful");
+                alert("Login successful!");
                 window.location.href = "main-page.html";
             }
 

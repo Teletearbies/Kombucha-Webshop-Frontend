@@ -28,12 +28,11 @@ getAll("products").then(product => {
         a.addEventListener('click', () =>{
             productId.value = item.id
 
-            $('#cont').load("popUpPage.html")
+            $('#cont').load("product-popup-page.html")
         })
 
         a.addEventListener('mouseover', function handleMouseOver() {
             productName.style.display = 'block'
-
         })
 
         a.addEventListener('mouseout', function handleMouseOut() {

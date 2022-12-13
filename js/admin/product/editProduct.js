@@ -1,16 +1,16 @@
-const saveButton = document.getElementById("saveButton");
+const saveButton = document.getElementById("saveButton")
 const productId = document.getElementById("chosenProductId")
-const url = "http://localhost:8080/products/" + productId.value;
-const nameTag = document.getElementById("name");
-const descriptionTag = document.getElementById("description");
-const priceTag = document.getElementById("price");
+const url = "http://localhost:8080/products/" + productId.value
+const nameTag = document.getElementById("name")
+const descriptionTag = document.getElementById("description")
+const priceTag = document.getElementById("price")
 let quantity = 1
 
 
 getMe()
 
 async function getMe() {
-    const response = await fetch(url).then(response => response.json());
+    const response = await fetch(url).then(response => response.json())
     nameTag.value = response.name
     descriptionTag.value = response.description
     priceTag.value = response.price
@@ -42,14 +42,14 @@ saveButton.addEventListener('click', (e) => {
                 "quantity": quantity
             }
         )
-        window.location.href = "adminProducts.html";
+        window.location.href = "admin-products.html"
     } else {
         alert("Fill out all the fields!")
     }
 
 })
 
-const cancelButtonEdit = document.getElementById("cancelButton");
+const cancelButtonEdit = document.getElementById("cancelButton")
 cancelButtonEdit.addEventListener("click", () => {
-    window.location.href = "adminProducts.html";
-});
+    window.location.href = "admin-products.html"
+})
