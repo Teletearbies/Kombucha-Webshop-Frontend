@@ -1,4 +1,4 @@
-const apiUrl = 'http://localhost:8080/login'
+const apiUrl = 'http://localhost:8080/loginuser'
 
 const username = document.getElementById("username");
 const password = document.getElementById("password");
@@ -12,6 +12,7 @@ function loginUser() {
 console.log(usernameValue, passwordValue)
  fetch(apiUrl,
     {
+        mode: 'no-cors',
         headers:{
             "Content-Type": "application/json"
         },
@@ -32,7 +33,7 @@ console.log(usernameValue, passwordValue)
 
 
                 alert("login sucessful");
-                window.location.href = "../html/main-page.html";
+                window.location.href = "main-page.html";
             }
 
         }
@@ -40,9 +41,8 @@ console.log(usernameValue, passwordValue)
 }
 
 
-signInButton.addEventListener("click", () => {
-    loginUser()
-    window.location.href = "html/main-page.html";
+signInButton.addEventListener("click",  () => {
+     loginUser()
 })
 
 
