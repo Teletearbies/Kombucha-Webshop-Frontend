@@ -13,7 +13,10 @@ getAll("blogs").then(product => {
         let author = document.createElement("p")
         let showMore = document.createElement("a")
         let editButton = document.createElement("button")
+        editButton.innerText = "Edit"
+
         let deleteButton = document.createElement("button")
+        deleteButton.innerText = "Delete"
         let twoButtons = document.createElement("div")
 
         editButton.className = "editButton"

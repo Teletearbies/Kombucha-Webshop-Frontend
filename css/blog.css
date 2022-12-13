@@ -28,8 +28,9 @@
     font-weight: bold;
     font-size: xx-large;
     color: white;
-    height: 20vh;
-    margin: 10px;
+    height: 252px;
+    width: 320px;
+    margin: 28px;
     border-radius: 25px;
     padding: 0 10px 0 10px;
     background-color: #4CAF50;
@@ -39,6 +40,7 @@
 .card_body {
     height: 28vh;
     min-height: 28vh;
+    min-width: 32vh;
     background: white;
     margin: 10px;
     border-radius: 25px;
@@ -135,7 +137,6 @@ p.card_author {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .nav-blog {
@@ -148,4 +149,56 @@ p.card_author {
     padding: 0 6rem;
     z-index: 100;
     padding-top: 10px;
+}
+
+.twoButtons {
+    text-align: center;
+    vertical-align: center;
+
+}
+
+.editButton {
+    margin: 10px;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+}
+
+.editButton:hover {
+    background-color: #3da942;
+}
+
+.editButton:active {
+    transform: translateY(4px);
+}
+
+.deleteButton {
+    margin: 10px;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #e10a0a;
+    border: none;
+    border-radius: 15px;
+}
+
+.deleteButton:hover {
+    background-color: #b70c0c
+}
+
+.deleteButton:active {
+    transform: translateY(4px);
 }
