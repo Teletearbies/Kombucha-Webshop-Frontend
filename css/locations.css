@@ -25,16 +25,11 @@ h3{
     font-size: 1.5rem;
 }
 
-
-
-
 .sectionLoc {
     padding: 13rem 3rem;
     /*border-top: 1px solid #022539;*/
     transition: transform 1s, opacity 1s;
     overflow-y: scroll;
-
-
 }
 
 .headerL {
@@ -44,6 +39,7 @@ h3{
     flex-direction: column;
     align-items: center;
 }
+
 .section__titleL {
     max-width: 400rem;
     margin: 0 auto 8rem auto;
@@ -74,8 +70,6 @@ h3{
 
 
 /*----- SOME GLOW BUTTONS -----*/
-
-
 .containerSoMe {
     display: flex;
     justify-content: center;
@@ -83,6 +77,7 @@ h3{
     height: 30vh;
     width: 100vw;
 }
+
 #apple,
 #twitter,
 #github,
