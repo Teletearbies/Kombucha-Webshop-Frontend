@@ -25,11 +25,14 @@
 }
 
 .addNewBlogButton {
+    height: 28vh;
+    width: 32vh;
+    min-height: 28vh;
+    min-width: 32vh;
     font-weight: bold;
     font-size: xx-large;
     color: white;
-    height: 252px;
-    width: 320px;
+
     margin: 28px;
     border-radius: 25px;
     padding: 0 10px 0 10px;
@@ -37,8 +40,14 @@
     cursor: pointer;
 }
 
+.addNewBlogButton:hover {
+    transition-duration: 1s;
+    transform: scale(1.11);
+}
+
 .card_body {
     height: 28vh;
+    width: 32vh;
     min-height: 28vh;
     min-width: 32vh;
     background: white;

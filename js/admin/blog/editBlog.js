@@ -15,6 +15,8 @@ async function getMe() {
 }
 
 async function editBlog(blog) {
+
+    console.log("url")
     fetch(url, {
         method: 'PUT',
         headers: {
@@ -31,8 +33,9 @@ async function editBlog(blog) {
 saveButton.addEventListener('click', (e) => {
     e.preventDefault()
     if (titleTag.value != "" && descriptionTag.value != "") {
+        console.log("edit save in blog")
         editBlog({
-                "id": 1,
+                "id": blogId.value,
                 "title": titleTag.value,
                 "description": description.value,
             }
