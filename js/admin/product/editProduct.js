@@ -26,7 +26,17 @@ async function editProduct(product) {
         body: JSON.stringify(product)
     })
         .then(response => response.json())
-        .then(data => console.log(data))
+        .then(data => {
+            if (data.status === 400 || data.status === 402 || data.status === null) {
+                //make a sound for success or failure
+
+                alert("Product was not edited!")
+
+            } else {
+                alert("Product was successfully edited!")
+            }
+
+        })
         .catch(err => console.log(err))
 
 }
@@ -42,11 +52,11 @@ saveButton.addEventListener('click', (e) => {
                 "quantity": quantity
             }
         )
+
         window.location.href = "admin-products.html"
     } else {
         alert("Fill out all the fields!")
     }
-
 })
 
 const cancelButtonEdit = document.getElementById("cancelButton")

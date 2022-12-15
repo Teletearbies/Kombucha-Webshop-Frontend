@@ -27,7 +27,16 @@ async function editBlog(blog) {
         body: JSON.stringify(blog)
     })
         .then(response => response.json())
-        .then(data => console.log(data))
+        .then(data => {
+            if (data.status === 400 || data.status === 402 || data.status === null) {
+                //make a sound for success or failure
+
+                alert("Blog was not edited!")
+
+            } else {
+                alert("Blog was successfully edited!")
+            }
+        })
         .catch(err => console.log(err))
 
 }

@@ -1,11 +1,10 @@
 const addProductButton = document.getElementById("addProductButton")
 const saveButton = document.getElementById("saveButton")
 const cancelButton = document.getElementById("cancelButton")
-const url= "http://localhost:8080/products"
+const url = "http://localhost:8080/products"
 const nameTag = document.getElementById("name")
 const descriptionTag = document.getElementById("description")
 const priceTag = document.getElementById("price")
-
 
 
 let name = ""
@@ -24,44 +23,44 @@ priceTag.addEventListener("change", (event) => {
 
 cancelButton.addEventListener("click", () => {
 
-        window.location.href = "admin-products.html";
+    window.location.href = "admin-products.html";
 
 })
 
 
 saveButton.addEventListener("click", () => {
-console.log("in save")
-console.log(name,description,price)
 
-        fetch(url, {
-            method: "POST",
-            headers: {
-                "Accept": "application/json",
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                name: name,
-                description: description,
-                price: price
-            }),
-        })
-            .then((response) => response.json())
-            //send the message about success or failure of the request
-            .then((data) => {
-                    if (data.status === 400  || data.status === 402 || data.status=== null) {
-                        //make a sound for success or failure
-
-                        alert("Product was not added!")
-
-                    }else   {
+        if (nameTag.value != "" && descriptionTag.value != "" && priceTag.value != "") {
 
 
-                        alert("Product was successfully added")
-                        window.location.href = "admin-products.html"
+            fetch(url, {
+                method: "POST",
+                headers: {
+                    "Accept": "application/json",
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    name: name,
+                    description: description,
+                    price: price
+                }),
+            })
+                .then((response) => response.json())
+                //send the message about success or failure of the request
+                .then((data) => {
+                        if (data.status === 400 || data.status === 402 || data.status === null) {
+
+                            alert("Product was not added!")
+                        } else {
+
+                            alert("Product was successfully added")
+                            window.location.href = "admin-products.html"
+                        }
                     }
-
-                }
-            )
+                )
+        } else {
+            alert("Fill out all the fields!")
+        }
     }
 )
 

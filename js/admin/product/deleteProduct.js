@@ -15,7 +15,10 @@ async function deleteProduct()
     })
         .then(data => {
             if (data.status === 200) {
+                alert("Product was successfully deleted!")
                 window.location.replace("admin-products.html")
+            } else {
+                alert("Product was not deleted!")
             }
         })
         .catch(err => console.log(err))

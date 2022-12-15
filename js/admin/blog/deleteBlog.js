@@ -14,7 +14,10 @@ async function deleteBlog() {
     })
         .then(data => {
             if (data.status === 200) {
+                alert("Message was successfully deleted!")
                 window.location.replace("admin-blog.html")
+            } else {
+                alert("Message was not deleted!")
             }
         })
         .catch(err => console.log(err))
