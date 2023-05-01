@@ -25,9 +25,9 @@ If you encounter any issues or have any questions, feel free to create an issue 
 ## Who maintains and contributes to the project
 This project was developed by the following team members:
 
-Dániel Szabó
-Fernanda Bacelar
-Amalie Vibe Larsen
+Dániel Szabó,
+Fernanda Bacelar,
+Amalie Vibe Larsen,
 Balazs Dombovari
 
 The project is currently maintained by the team members and may be updated in the future.
