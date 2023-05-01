@@ -4,6 +4,8 @@
   <img src="https://user-images.githubusercontent.com/60754393/235455418-7d752ca0-f797-4d93-bf26-6170816688a4.jpg" alt="big_logo">
 </p>
 
+## What the project does
+
 This is a webshop created for Kalles Kombucha company as a third semester project. The webshop allows customers to browse the list of products along with their description and price. Customers can register on the site with their personal information and can add products to a basket, which automatically calculates the total price. Completed orders generate a receipt for the customer and an internal message sent to the warehouse with the order information. The webshop also includes a map that shows physical locations where Kalles Kombucha products are being sold.
  
 ## Why the project is useful
