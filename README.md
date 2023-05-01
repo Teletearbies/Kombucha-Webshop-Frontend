@@ -1,5 +1,7 @@
-# Kalles Kombucha Webshop
+
+
 <p align="center">
+# Kalles Kombucha Webshop
   <img src="https://user-images.githubusercontent.com/60754393/235455418-7d752ca0-f797-4d93-bf26-6170816688a4.jpg" alt="big_logo">
 </p>
 
